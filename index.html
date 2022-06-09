@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>historique</title>
+        <script src="script.js" defer></script>
+    </head>
+    <style>
+        .list{
+            display: flex;
+            flex-direction: column;
+        }
+        .style_none{
+            appearance: none;
+            outline: none;
+            border: none;
+            background: none;
+        }
+        .cash_out::before{
+            content: "-";
+            color: grey;
+        }
+        .cash_out{
+            color: red;
+        }
+        
+    </style>
+    <body>
+        <form id="form" action="#">
+            <label for="description">Description</label>
+            <input type="text" id="descri_new" name="description">
+            
+            <label for="cash">Cash</label>
+            <input type="text" id="cash_new" name="cash">
+            <input type="submit" id="btn_add" value="ADD">
+        </form>
+
+        <!-- history list -->
+        <div id="demo" class="list">
+
+        </div>
+    </body>
+</html>
